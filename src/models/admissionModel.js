@@ -13,12 +13,10 @@ const admissionSchema = new mongoose.Schema(
     studentClass: {
       type: String,
       required: true,
-      unique: true,
     },
     parentName: {
       type: String,
       required: true,
-      unique: true,
     },
     gender: {
       type: String,
