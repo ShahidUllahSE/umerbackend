@@ -9,6 +9,7 @@ const eventRoutes = require('./src/routes/eventRoutes'); // Import the user rout
 const examRoutes = require('./src/routes/examRoutes'); // Import the user routes (assuming routes are in the 'src/routes' folder)
 const contactRoutes = require('./src/routes/contactRoutes'); // Import the user routes (assuming routes are in the 'src/routes' folder)
 const admissionRoutes = require('./src/routes/admissionRoutes'); // Import the user routes (assuming routes are in the 'src/routes' folder)
+const payPaymentRoutes = require('./src/routes/payPaymentRoutes'); // Import the user routes (assuming routes are in the 'src/routes' folder)
 
 const feeRoutes = require('./src/routes/feeRoutes'); // Import the user routes (assuming routes are in the 'src/routes' folder)
 
@@ -38,6 +39,7 @@ app.use('/api/exam', examRoutes); // Prefix the route with '/api'
 app.use('/api/contact', contactRoutes); // Add the contact routes
 app.use('/api/addmission', admissionRoutes); 
 app.use('/api/fee', feeRoutes); 
+app.use('/api/payPayment', payPaymentRoutes); 
 
 
 // Handle unknown routes (404)
