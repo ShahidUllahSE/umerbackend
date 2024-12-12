@@ -10,6 +10,7 @@ const examRoutes = require('./src/routes/examRoutes'); // Import the user routes
 const contactRoutes = require('./src/routes/contactRoutes'); // Import the user routes (assuming routes are in the 'src/routes' folder)
 const admissionRoutes = require('./src/routes/admissionRoutes'); // Import the user routes (assuming routes are in the 'src/routes' folder)
 
+const feeRoutes = require('./src/routes/feeRoutes'); // Import the user routes (assuming routes are in the 'src/routes' folder)
 
 var cors = require('cors')
 
@@ -36,6 +37,8 @@ app.use('/api/event', eventRoutes); // Prefix the route with '/api'
 app.use('/api/exam', examRoutes); // Prefix the route with '/api'
 app.use('/api/contact', contactRoutes); // Add the contact routes
 app.use('/api/addmission', admissionRoutes); 
+app.use('/api/fee', feeRoutes); 
+
 
 // Handle unknown routes (404)
 app.use((req, res) => {
